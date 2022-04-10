@@ -1,0 +1,91 @@
+body{
+    background-color: #181818;
+    color: #FFFFFF;
+}
+
+#webpage{
+    display: grid;
+    grid-template-areas: 
+     'menu-h menu-h menu-h'
+     'content content recommended'
+     'video-name video-name recommended'
+     'description description recommended'
+     'commentaries commentaries recommended';
+}
+
+#menu-h{
+    background-color: 	#212121;
+    grid-area: menu-h;
+    height: 3em;
+    width: 100%;
+    font-size: 14;
+}
+
+.index{
+    font-size: 1.5em;
+    margin-left: 40%;
+    
+}
+
+#menu-h img{
+    width: 2%;
+    margin-left: 1em;
+    margin-top: 0.7em;
+}
+
+#content{
+    grid-area: content;
+    margin-left: 2em;
+    margin-top: 1.5em;
+    margin-right: 1em;
+    width: 75vw;
+    height: 70vh;    
+    background-image: url(images/opgj43no5dqhgafhypuk.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+
+#recommended{
+    grid-area: recommended;
+    width: 100%;
+}
+
+.recommended{
+    width: 15vw;
+    height: 10vh;
+    padding: 0.8em;
+    margin: 0.8em;
+    background-image: url(images/602ee9ced3ad27001837f2ac.png);
+    background-size: cover;
+}
+.recommended:hover{
+    width: 15vw;
+    height: 10vh;
+    padding: 0.8em;
+    background-image: url(images/dance-moves.gif);
+}
+
+.title{
+    margin-left: 0.8em;
+    margin-bottom: 1.5em;
+}
+
+#video-name{
+    grid-area: video-name;
+    font-size: 2em;
+    margin-left: 0.5em;
+}
+
+#description{
+    grid-area: description;
+    margin-left: 0.5em;
+    margin-top: 1em;
+}
+
+#commentaries{
+    grid-area: commentaries;
+    margin-left: 1em;
+    margin-top: 1em;
+}

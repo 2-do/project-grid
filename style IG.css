@@ -1,0 +1,73 @@
+body{background-color: #111111; color: #FFFFFF;}
+
+#website{
+    color: #FFFFFF;
+    background-color: rgb(14, 15, 14);
+    display: grid;
+    grid-template-areas: 'menu menu menu' 'pfp profile profile' 'stories stories stories' 'photos photos photos';
+}
+
+#menu{
+    grid-area: menu;
+    background-color: #000000;
+    padding: 1em;
+    font-size: 200%;
+    text-align: center;
+}
+
+#pfp{
+    grid-area: pfp;
+    margin-left: 50%;
+    margin-top: 20%;
+}
+
+.pfp1{
+    width: auto;
+    height: 15em;
+    background-image: url(images/602ee9ced3ad27001837f2ac.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+}
+
+#profile{
+    grid-area: profile;
+    margin-top: 12%;
+    margin-left: 10%;
+    background-image: url(images/unknown.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+#stories{
+    grid-area: stories;
+    display: grid;
+    margin-top: 20%;
+    margin-left: 22%;
+    margin-right: 12%;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+.storie img{
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+
+#photos{
+    grid-area: photos;
+    display: grid;
+    margin-top: 10%;
+    margin-left: 20%;
+    grid-template-columns: auto auto auto;
+    column-gap: 0.5em;
+    row-gap: 1em;
+
+}
+
+.photo img{
+    width: 50%;
+    display: block;
+    text-align: center;
+    
+}
